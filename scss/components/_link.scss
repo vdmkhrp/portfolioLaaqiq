@@ -1,0 +1,18 @@
+@use "sass:color";
+
+.main-link {
+  @extend .text, .text--medium;
+  color: $dark;
+  transition-property: color;
+  transition-duration: $animation-duration;
+  transition-timing-function: ease;
+  &:hover {
+    color: $light--accent;
+  }
+  &:active {
+    color: color.scale($light--accent, $lightness: -30%);
+  }
+}
+
+
+// align-items:flex-start

@@ -6,6 +6,9 @@
     padding-bottom: 135px;
     border-bottom: 1px solid $stroke-color;
   }
+  &__heading {
+    max-width: 336px;
+  }
   &__image {
     display: block;
     width: 100%;
@@ -50,21 +53,6 @@
   }
   &__left-col-title {
     padding-bottom: 11px;
-  }
-  &__link {
-    @extend .text, .text--medium;
-    margin-top: 8px;
-    align-self: flex-start;
-    color: $dark;
-    transition-property: color;
-    transition-duration: $animation-duration;
-    transition-timing-function: ease;
-    &:hover {
-      color: $light--accent;
-    }
-    &:active {
-      color: color.scale($light--accent, $lightness: -30%);
-    }
   }
   &__right-col {
     display: grid;
