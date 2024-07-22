@@ -1,0 +1,23 @@
+.main-cards {
+  display: flex;
+  align-items: flex-end;
+  &__item {
+    min-height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    padding: 48px;
+    row-gap: 19px;
+    border: 1px solid $stroke-color;
+    &--accent {
+      background-color: #fff;
+    }
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+  }
+  .circle {
+    margin-bottom: 22px;
+  }
+}

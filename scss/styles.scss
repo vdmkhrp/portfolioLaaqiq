@@ -4,6 +4,7 @@
 @import "./base/generals-styles";
 @import "./base/typography";
 
+
 //-----components
 @import "./components/button";
 @import "./components/checkbox";
@@ -12,6 +13,9 @@
 @import "./components/circle";
 @import "./components/icons";
 @import "./components/comment";
+@import "./components/video";
+@import "./components/mains-cards";
+
 
 //-----sections
 @import "./sections/header";
@@ -19,9 +23,6 @@
 @import "./sections/company";
 @import "./sections/main-section";
 @import "./sections/statistics";
-@import "./sections/work";
-@import "./sections/video-reel";
-@import "./sections/new-look";
 
 
 //-----bootstrap

@@ -1,8 +1,5 @@
-.video-reel {
-  padding-bottom: 190px;
-  &__video {
-    position: relative;
-  }
+.video {
+  position: relative;
   &__play {
     @extend .circle, .circle--dark, .circle--148;
     position: absolute;
@@ -35,17 +32,5 @@
     display: block;
     width: 100%;
     height: auto;
-  }
-  &__content {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  &__title {
-    margin-bottom: 8px;
-  }
-  &__text {
-    max-width: 470px;
   }
 }

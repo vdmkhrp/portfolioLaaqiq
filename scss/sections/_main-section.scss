@@ -1,8 +1,7 @@
 @use "sass:color";
 
 .main-section {
-  padding-top: 101px;
-  padding-bottom: 161px;
+  @extend .pt-10;
   .container--border {
     padding-bottom: 135px;
     border-bottom: 1px solid $stroke-color;
@@ -17,7 +16,27 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding-top: 70px;
+  }
+  &__title {
+    padding-bottom: 8px;
+  }
+  &__text {
+    max-width: 470px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &__list-item {
+    @extend .text, .text--medium, .text--dark-gray;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  &__list-marker {
+    @extend .circle, .circle--light-accent, .circle--32;
+    flex-shrink: 0;
   }
   .main-btn {
     align-self: flex-start;
@@ -32,7 +51,7 @@
   &__left-col-title {
     padding-bottom: 11px;
   }
-  &__left-col-link {
+  &__link {
     @extend .text, .text--medium;
     margin-top: 8px;
     align-self: flex-start;

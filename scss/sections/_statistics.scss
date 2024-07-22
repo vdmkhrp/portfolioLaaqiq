@@ -1,11 +1,15 @@
 .statistics {
-  padding-bottom: 140px;
+  border: 1px solid $stroke-color;
+  .col {
+    &:not(:last-child) {
+      box-shadow: 1px 0px 0px 0px $stroke-color;
+    }
+  }
   &__block {
     padding: 40px 45px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    border: 1px solid $stroke-color;
     h3 {
       text-overflow: ellipsis;
       overflow: hidden;
