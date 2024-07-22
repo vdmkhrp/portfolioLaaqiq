@@ -1,0 +1,37 @@
+@import "../utils/helpers";
+
+.select {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 16px;
+  user-select: none;
+  &__label {
+    color: $dark;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__list {
+    @extend .text;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    min-width: 270px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 2px $stroke-color;
+    background-color: $light;
+    color: $dark--gray;
+    text-transform: capitalize;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='m5 6 5-6H0l5 6Z' fill='%23EF6D58'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    background-position: right 10px top 50%;
+    &:focus {
+      box-shadow: 0 0 0 2px $light--accent;
+    }
+  }
+}

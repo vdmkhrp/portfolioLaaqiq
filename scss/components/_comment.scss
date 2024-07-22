@@ -1,0 +1,14 @@
+@use "sass:color";
+
+.comment {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  &__image {
+    display: block;
+    max-width: 48px;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+}

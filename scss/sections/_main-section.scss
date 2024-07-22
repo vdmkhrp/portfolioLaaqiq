@@ -1,0 +1,65 @@
+@use "sass:color";
+
+.main-section {
+  padding-top: 101px;
+  padding-bottom: 161px;
+  .container--border {
+    padding-bottom: 135px;
+    border-bottom: 1px solid $stroke-color;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 70px;
+  }
+  .main-btn {
+    align-self: flex-start;
+    margin-top: 14px;
+  }
+  &__left-col {
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__left-col-title {
+    padding-bottom: 11px;
+  }
+  &__left-col-link {
+    @extend .text, .text--medium;
+    margin-top: 8px;
+    align-self: flex-start;
+    color: $dark;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: ease;
+    &:hover {
+      color: $light--accent;
+    }
+    &:active {
+      color: color.scale($light--accent, $lightness: -30%);
+    }
+  }
+  &__right-col {
+    display: grid;
+    grid-auto-columns: min-content 1fr;
+    row-gap: 32px;
+    column-gap: 54px;
+    padding-top: 40px;
+    align-items: center;
+  }
+  &__right-col-content-subtitle {
+    @extend h1;
+    grid-column-start: 1;
+  }
+  &__right-col-content-title {
+    grid-column-start: 2;
+  }
+}

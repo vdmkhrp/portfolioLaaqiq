@@ -1,0 +1,41 @@
+@use "sass:color";
+
+.hero {
+  background-color: $dark-bg;
+  padding-top: 114px;
+  padding-bottom: 64px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 513px;
+  }
+  &__content-text {
+    max-width: 470px;
+  }
+  &__content-action {
+    display: flex;
+    align-items: center;
+    column-gap: 46px;
+    padding-top: 10px;
+    padding-bottom: 84px;
+  }
+  &__content-action-link {
+    @extend .text--medium;
+    color: $light;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: ease;
+    &:hover {
+      color: $light--accent;
+    }
+    &:active {
+      color: color.scale($light--accent, $lightness: -30%);
+    }
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

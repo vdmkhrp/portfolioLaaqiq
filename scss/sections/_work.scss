@@ -1,0 +1,9 @@
+@use "sass:color";
+
+.work {
+  padding-bottom: 127px;
+  .container--border {
+    padding-bottom: 135px;
+    border-bottom: 1px solid $stroke-color;
+  }
+}

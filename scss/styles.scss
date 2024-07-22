@@ -1,0 +1,28 @@
+//-----base
+@import "./base/custom-reset";
+@import "./base/variables";
+@import "./base/generals-styles";
+@import "./base/typography";
+
+//-----components
+@import "./components/button";
+@import "./components/checkbox";
+@import "./components/radio";
+@import "./components/select";
+@import "./components/circle";
+@import "./components/icons";
+@import "./components/comment";
+
+//-----sections
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/company";
+@import "./sections/main-section";
+@import "./sections/statistics";
+@import "./sections/work";
+@import "./sections/video-reel";
+@import "./sections/new-look";
+
+
+//-----bootstrap
+@import "./bootstrap5/bootstrap-grid.scss";

@@ -1,0 +1,66 @@
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.11;
+  letter-spacing: -0.0277em;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -0.0178em;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3333;
+}
+
+h5,
+.label {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.1875em;
+  text-transform: uppercase;
+}
+
+.text {
+  &--medium {
+    font-size: 16px;
+    line-height: 2;
+  }
+  &--big {
+    font-size: 20px;
+    line-height: 2;
+  }
+  &--small {
+    font-size: 14px;
+    line-height: 1.7142;
+  }
+  &--light {
+    color: $light;
+  }
+  &--dark {
+    color: $dark;
+  }
+  &--dark-gray {
+    color: $dark--gray;
+  }
+  &--light-gray {
+    color: $light--gray;
+  }
+  &--light-accent {
+    color: $light--accent;
+  }
+  &--dark-accent {
+    color: $dark--accent;
+  }
+}

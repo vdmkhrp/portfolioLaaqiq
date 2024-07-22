@@ -1,0 +1,13 @@
+.company {
+  .container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid $stroke-color;
+  }
+  &__img {
+    height: auto;
+    width: auto;
+    max-width: 147px;
+    max-height: 47px;
+  }
+}

@@ -1,0 +1,51 @@
+.video-reel {
+  padding-bottom: 190px;
+  &__video {
+    position: relative;
+  }
+  &__play {
+    @extend .circle, .circle--dark, .circle--148;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: $animation-duration;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    &:hover {
+      background-color: rgba($light, 0.2);
+    }
+    &:active {
+      background-color: rgba($light, 0.4);
+    }
+  }
+  &__time {
+    position: absolute;
+    bottom: 22px;
+    left: 24px;
+    border-radius: 6px;
+    background-color: rgba(#570b00, 0.23);
+    line-height: 1;
+    padding: 8px 10px 4px;
+    user-select: none;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__text {
+    max-width: 470px;
+  }
+}

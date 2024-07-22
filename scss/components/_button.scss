@@ -1,0 +1,58 @@
+@use "sass:color";
+
+.main-btn {
+  @extend .text--small;
+  padding: 18px 56px;
+  color: $light;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color, transform;
+  transition-duration: $animation-duration;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  &:active {
+    transform: translateY(3px);
+  }
+  &--light {
+    background-color: $light;
+    color: $dark;
+    box-shadow: 0 3px 9px 0 rgba($dark, 0.08);
+    &:hover {
+      background-color: $light--accent;
+    }
+    &:active {
+      background-color: color.scale($light--accent, $lightness: -30%);
+    }
+  }
+  &--light-accent {
+    background-color: $light--accent;
+    &:hover {
+      background-color: color.scale($light--accent, $lightness: -30%);
+    }
+    &:active {
+      background-color: color.scale($light--accent, $lightness: -50%);
+    }
+  }
+  &--dark {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px rgba($light, 0.3);
+    &:hover {
+      background-color: $dark--accent;
+      box-shadow: none;
+    }
+    &:active {
+      background-color: color.scale($dark--accent, $lightness: -30%);
+    }
+  }
+  &--dark-accent {
+    background-color: $dark--accent;
+    &:hover {
+      background-color: color.scale($dark--accent, $lightness: -30%);
+    }
+    &:active {
+      background-color: color.scale($dark--accent, $lightness: -50%);
+    }
+  }
+}

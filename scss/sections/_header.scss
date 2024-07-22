@@ -1,0 +1,48 @@
+@use "sass:color";
+
+.header {
+  background-color: $dark-bg;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    &:hover .header__logo-title {
+      color: $light--accent;
+    }
+  }
+  &__logo-icon {
+    width: 46px;
+    aspect-ratio: 1;
+    color: $light--accent;
+  }
+  &__logo-title {
+    color: $light;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: ease;
+  }
+  &__nav {
+    display: flex;
+    column-gap: 70px;
+  }
+  &__nav-link {
+    @extend .text;
+    color: $light;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: ease;
+    &:hover {
+      color: $light--accent;
+    }
+    &:active {
+      color: color.scale($light--accent, $lightness: -30%);
+    }
+  }
+}
