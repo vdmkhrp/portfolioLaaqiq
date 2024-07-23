@@ -5,6 +5,7 @@
   transition-property: color;
   transition-duration: $animation-duration;
   transition-timing-function: ease;
+  align-self: flex-start;
   &--light-accent {
     color: $dark;
     &:hover {
