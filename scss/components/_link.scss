@@ -2,17 +2,34 @@
 
 .main-link {
   @extend .text, .text--medium;
-  color: $dark;
   transition-property: color;
   transition-duration: $animation-duration;
   transition-timing-function: ease;
-  &:hover {
-    color: $light--accent;
+  &--light-accent {
+    color: $dark;
+    &:hover {
+      color: $light--accent;
+    }
+    &:active {
+      color: color.scale($light--accent, $lightness: -30%);
+    }
   }
-  &:active {
-    color: color.scale($light--accent, $lightness: -30%);
+  &--dark-accent {
+    color: $light;
+    &:hover {
+      color: $dark--accent;
+    }
+    &:active {
+      color: color.scale($dark--accent, $lightness: -30%);
+    }
+  }
+  &--light-gray {
+    color: $light--gray;
+    &:hover {
+      color: $light;
+    }
+    &:active {
+      color: color.scale($light, $lightness: -30%);
+    }
   }
 }
-
-
-// align-items:flex-start

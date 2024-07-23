@@ -1,0 +1,50 @@
+.work {
+  background-color: $dark-bg;
+  text-align: center;
+  &__group {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+  }
+  &__group-item-quantity {
+    vertical-align: top;
+    font-size: 14px;
+    user-select: none;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__box-card {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    &--first {
+      background-image: url(/img/sofa.jpg);
+    }
+    &--second {
+      background-image: url(/img/keyBoard.jpg);
+    }
+    &--third {
+      background-image: url(/img/workMedia.jpg);
+    }
+    &--fourth {
+      background-image: url(/img/DDDone.jpg);
+    }
+  }
+  &__box-card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background-color: $light;
+    border-radius: 6px;
+  }
+  &__box-card-link-wrapper {
+    height: 416px;
+  }
+}

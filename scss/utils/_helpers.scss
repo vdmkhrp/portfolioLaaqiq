@@ -29,3 +29,13 @@
     }
   }
 }
+
+$sizes: 318, 336, 342, 394, 426, 531;
+
+.heading {
+  @each $s in $sizes {
+    &--#{$s} {
+      max-width: #{$s}px;
+    }
+  }
+}
