@@ -32,4 +32,6 @@ ol, ul {
 
 a {
 	text-decoration: none;
+	display: grid;
+	mask-image: linear-gradient(#000, #000);
 }
